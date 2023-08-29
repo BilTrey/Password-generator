@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home page</title>
+	<style>
+		h1{
+			font-size: 5vw;
+			font-family: sans-serif;
+			position: absolute;
+			top: 39vh;
+			left: 22vw;
+			animation-name: color_change;
+			animation-delay: 1s;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes color_change{
+			0%{
+				color: black;
+			}
+			25%{
+				color: #a4eb31;
+			}
+			50%{
+				color: #7d6396;
+			}
+			75%{
+				color: #db0738;
+			}
+			100%{
+				color: #268762;
+			}
+		}
+
+		.h11{
+			display: flex;
+			margin-left: 3vw;
+			margin-bottom: 5vw;
+		}
+
+		.navbar{
+			display: flex;
+			width: 100vw;
+		}
+
+		.logo{
+			width: 25vw;
+			text-align: center;
+		}
+
+		.logo h2{
+			font-size: 2.5vw;
+			font-family: sans-serif;
+			font-weight: bold;
+		}
+
+		.menu{
+			width: 75vw;
+		}
+
+		.menu ul{
+			display: flex;
+			margin-left: 8vw;
+		}
+
+		.menu ul li{
+			padding: 1vw 4vw 0vw 4vw;
+			list-style: none;
+			font-size: 2vw;
+			font-weight: bold;
+			color: #e20afa;
+
+		}
+
+		@media screen and (min-width: 100px) and (max-width: 1200px){
+			.h11 img{
+				height: 50vh;
+				width: 25vw;
+/*				top: 25vw;*/
+			}
+
+			.logo h2{
+				font-weight: bolder;
+				margin-top: 4vw;
+			}
+		}
+
+		/*@media screen and (min-width: px) and (max-width: 1200px){
+			.h11 img{
+				height: 35vh;
+				width: 25vw;
+			}
+		}*/
+
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<div class="logo">
+			<h2>Shreesant Adhikari</h2>
+		</div>
+		<div class="menu">
+			<ul>
+				<li>Home</li>
+				<li>Blogs</li>
+				<li>About</li>
+				<li>Contact</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="h11">
+		<img src="shreebg.png">
+		<h1>Welcome to our Home page</h1>
+	</div>
+
+</body>
+</html>
